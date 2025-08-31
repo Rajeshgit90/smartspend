@@ -1,0 +1,37 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #e2e8e7;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: rgb(128, 122, 122);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 5PX 10PX 10px rgba(0,0,0,0.1);
+}
+
+form input, form select, form button {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #a19494;
+  margin: 8px 0;
+  padding: 10px;
+  border-left: 5px solid #a32828;
+}
+
+#chart-container {
+  margin-top: 30px;
+}
