@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SmartSpend - Personal Finance Tracker</title>
+  <link rel="stylesheet" href="smartspend.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>SmartSpend</h1>
+
+    <form id="transaction-form">
+      <input type="text" id="description" placeholder="Description" required />
+      <input type="number" id="amount" placeholder="Amount (+ for income, - for expense)" required />
+      <input type="date" id="date" required />
+      <select id="category">
+        <option value="Food">Food</option>
+        <option value="Transport">Transport</option>
+        <option value="Salary">Salary</option> 
+        <option value="Room rent">Room rent</option>
+        <option value="college fees">College fees</option>
+        <option value="fruits">Fruits</option>
+        <option value="grocery">Grocery</option>
+        <option value="Other">Other</option>
+      </select>
+      <button type="submit">Add Transaction</button>
+    </form>
+
+    <div id="balance">
+      <h2>Balance: ₹<span id="total-balance">0</span></h2>
+    </div>
+
+    <div id="transactions">
+      <h3>Transaction History</h3>
+      <ul id="transaction-list"></ul>
+    </div>
+
+    <div id="chart-container">
+      <canvas id="expense-chart"></canvas>
+    </div>
+  </div>
+
+  <script src="smartspend.js"></script>
+</body>
+</html>
